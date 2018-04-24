@@ -1,0 +1,35 @@
+nav {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+  grid-template-rows: 100vh;
+}
+
+nav a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 32px;
+  color: #fff;
+  z-index: 1;
+  transition: all .3s;
+  transform: scale(0.9);
+}
+
+nav a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #35bfeb;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+nav a:hover {
+  transform: scale(1);
+}

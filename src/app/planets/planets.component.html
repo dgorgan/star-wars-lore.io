@@ -1,0 +1,7 @@
+<div class="planet-list">
+  <a href="" routerLink="{{planet.name}}"  *ngFor="let planet of planets; let i = index" (click)="onSelect(i)" class="planet">
+    <h2>{{planet.name}}</h2>
+    <img src="assets/img/planets/{{planet.name}}.jpg" alt="Planet" width="25" class="planet-icon">
+  </a>
+  <a href="" routerLink="" class="btn">Go Home</a>
+</div>

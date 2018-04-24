@@ -1,0 +1,44 @@
+.planet-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding-top: 16px;
+}
+
+.planet {
+  width: 35%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6px;
+  padding: 12px;
+  background: #35bfeb;
+  text-decoration: none;
+  color: #fff;
+}
+
+.planet h2 {
+  margin: 0;
+  margin-right: 12px;
+}
+
+.planet:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: -2px;
+  background: #fb8b2a;
+  transition: all .3s;
+}
+
+
+.planet:hover:after {
+  width: 100%;
+  opacity: 1;
+}

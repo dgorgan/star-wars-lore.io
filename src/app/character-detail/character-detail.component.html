@@ -1,0 +1,17 @@
+<div *ngIf="character" class="character">
+  <div class="character-wrap">
+    <img src="/assets/img/characters{{characterImg}}.jpg" alt="Avatar" style="width:100%">
+    <div class="character-bio">
+      <h2>Name: {{character.name }}</h2>
+      <p>Height: <strong>{{character.height}}</strong></p>
+      <p>Mass: <strong>{{character.mass}}</strong></p>
+      <p>Hair Color: <strong>{{character.hair_color}}</strong></p>
+      <p>Skin Color: <strong>{{character.skin_color}}</strong></p>
+      <p>Eye Color: <strong>{{character.eye_color}}</strong></p>
+      <p>Birth Year: <strong>{{character.birth_year}}</strong></p>
+      <p>Gender: <strong>{{character.gender}}</strong></p>
+      <!-- <p>{{character.homeworld}}</p> -->
+    </div>
+  </div>
+  <a href="javascript:void()"class="btn" (click)="goBack()">Go Back</a>
+</div>

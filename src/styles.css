@@ -1,0 +1,85 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Poller+One');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+/* CSS Reset */
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  color: #fff;
+  line-height: 1;
+  font-family: 'Raleway', sans-serif;
+  background: url("assets/img/background-stars.jpg");
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1,
+h2 {
+  font-family: 'Poller One', cursive;
+}
+
+h1 {
+  margin: 0;
+  padding: 16px;
+  background: #488eb5;
+  color: #fff;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+h1:hover {
+  transform: scale(1.01);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 250px;
+  padding: 12px 0;
+  margin: 16px 16px 52px;
+  border-radius: 2px;
+  background-color: #464646;
+  font-family: "omnes-pro",sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: all .3s;
+}
+
+.btn:hover {
+  text-decoration: none;
+  background-color: #6c6c6c;
+}

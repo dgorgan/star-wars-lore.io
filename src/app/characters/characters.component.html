@@ -1,0 +1,7 @@
+<div class="character-list">
+  <a href="" routerLink="{{character.name}}"  *ngFor="let character of characters; let i = index" (click)="onSelect(i)" class="character">
+    <h2>{{character.name}}</h2>
+    <img src="assets/img/characters/{{character.name}}.jpg" alt="Character" width="35" class="character-icon">
+  </a>
+  <a href="" routerLink="" class="btn">Go Home</a>
+</div>

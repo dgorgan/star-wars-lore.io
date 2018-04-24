@@ -1,0 +1,19 @@
+.character {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.character-wrap {
+  max-width: 500px;
+  margin: 36px;
+  border: 1px solid;
+  background-color: #35bfeb;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.character-bio {
+  padding: 16px;
+}

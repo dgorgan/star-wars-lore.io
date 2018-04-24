@@ -1,0 +1,17 @@
+<div *ngIf="planet" class="planet">
+  <div class="planet-wrap">
+    <img src="/assets/img/planets{{planetImg}}.jpg" alt="Avatar" style="width:100%">
+    <div class="planet-bio">
+      <h2>Name: {{planet.name }}</h2>
+      <p>Rotation Period: <strong>{{planet.rotation_period }}</strong></p>
+      <p>Orbital Period: <strong>{{planet.orbital_period }}</strong></p>
+      <p>Diameter: <strong>{{planet.diameter}}</strong></p>
+      <p>Climate: <strong>{{planet.climate}}</strong></p>
+      <p>Gravity: <strong>{{planet.gravity}}</strong></p>
+      <p>Terrain: <strong>{{planet.terrain}}</strong></p>
+      <p>Surface Water: <strong>{{planet.surface_water}}</strong></p>
+      <p>Population: <strong>{{planet.population}}</strong></p>
+    </div>
+  </div>
+  <a href="javascript:void()" class="btn" (click)="goBack()">Go Back</a>
+</div>
